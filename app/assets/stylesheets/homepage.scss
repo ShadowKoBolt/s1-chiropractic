@@ -1,0 +1,75 @@
+.hero {
+  height: 600px;
+  background-image: image-url("hero-1.jpg");
+  background-size: cover;
+  position: relative;
+  .hero-body {
+    background-color: rgba(238,239,240, 0.5);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    p {
+      font-size: 2rem;
+    }
+  }
+}
+
+.category {
+  height: 100%;
+  border-bottom: 6px solid white;
+  h2 {
+    font-weight: 700;
+  }
+  img {
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.social-media {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home--blog--image {
+  max-width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home--blog--more-link {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.home--testimonial--body {
+  padding-top: 50px;
+  font-size: 2rem;
+  font-style: italic;
+  line-height: 1.8;
+  font-family: 'PT Serif', serif;
+}
+
+.home--testimonial--quote-1-container, .home--testimonial--quote-2-container {
+  width: 10%;
+  display: table-cell;
+  vertical-align: bottom;
+  img {
+    max-width: 60%;
+  }
+}
+
+.home--testimonial--quote-2-container {
+  img {
+    align-self: flex-bottom;
+  }
+}
+
+.home--testimonial--center {
+  width: 80%;
+}

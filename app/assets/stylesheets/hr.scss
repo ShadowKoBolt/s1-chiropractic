@@ -1,0 +1,8 @@
+hr.hr-primary {
+  border-top: 2px solid $brand-primary;
+  width: 100px;
+}
+hr.hr-primary-wide {
+  @extend .hr-primary;
+  width: 300px;
+}

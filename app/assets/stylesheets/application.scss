@@ -1,0 +1,28 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,700,900);
+@import url(https://fonts.googleapis.com/css?family=PT+Serif:400italic);
+
+$brand-primary: #6db5fc;
+$navbar-height: 293px;
+$navbar-default-bg: transparent;
+$navbar-default-link-active-color: $brand-primary;
+$navbar-default-border: none;
+$font-family-base: 'Ruboto', sans-serif;
+$gray-dark: #6c6c6c;
+$link-color: $gray-dark;
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "bootstrap.offcanvas.min";
+@import "space";
+@import "display";
+@import "heading";
+@import "radius";
+@import "bg";
+@import "nav";
+@import "hr";
+@import "homepage";
+
+.row-eq-height {
+  display: flex;
+}
+

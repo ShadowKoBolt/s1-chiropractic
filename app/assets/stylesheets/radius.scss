@@ -1,0 +1,5 @@
+@for $i from 0 through 100 {
+  .border-radius-#{$i} {
+    border-radius: 10px * $i;
+  }
+}

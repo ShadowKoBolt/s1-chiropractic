@@ -1,0 +1,102 @@
+.hero
+  .hero-body.pv-2
+    .container.text-center
+      h1 Lorem
+      p Ipsum
+
+.bg-white.pv-2
+  .container.text-center
+    h3 Book Now
+    h2.text-primary
+      strong 0800 756 1269
+    hr.hr-primary
+
+.container.pv-3
+  .row.row-eq-height
+    .col-sm-4
+      .category.bg-primary.text-center.p-2
+        = image_tag "spine.png", class: "img-responsive"
+        h2 Headaches / Neck pain / Low back pain / Sciatica
+    .col-sm-4
+      .category.bg-primary.text-center.p-2
+        = image_tag "pregnancy.png", class: "img-responsive"
+        h2 Ante and post natal chiropractic
+    .col-sm-4
+      .category.bg-primary.text-center.p-2
+        = image_tag "book.png", class: "img-responsive"
+        h2 Restorative exercise &trade; workshops / products
+
+.bg-white
+  .container
+    .row
+      .col-sm-6.text-center.mb-2
+        h2 Sign up for updates
+        hr.hr-primary-wide
+        = form_tag "", class: "form-inline pb-1" do
+          .form-group
+            = text_field_tag :email, nil, placeholder: "Enter your email", class: "form-control text-center"
+          = submit_tag "Subscribe", class: "btn btn-default"
+        p.mb-2
+          small Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Pellentesque ut neque. Phasellus viverra nulla ut metus varius laoreet. Phasellus blandit.
+        .social-media.mb-2
+          = link_to "#TODO" do
+            = image_tag "twitter.png"
+          = link_to "#TODO" do
+            = image_tag "linkedin.png"
+          = link_to "#TODO" do
+            = image_tag "facebook.png"
+          = link_to "#TODO" do
+            = image_tag "youtube.png"
+      .col-sm-6.text-center.pt-2.mb-2
+        = image_tag "home-blog.png", class: "img-responsive border-radius-6 home--blog--image"
+        h2 Example blog title
+        hr.hr-primary-wide
+        p Lorem ipsum dolor sit amet, in elitr singulis vel, ea diceret pericula pri, ex quod dicit posidonium mei. Omnesque consulatu eam te, tota electram te nam.
+        = link_to "Read More", "#TODO", class: "home--blog--more-link"
+
+.container.pt-2.home-testimonial.text-center
+  .home--testimonial--quote-1-container.pull-left
+    = image_tag "quote-1.png"
+  div.pull-left.home--testimonial--center.mb-4
+    p.home--testimonial--body
+      | Fringilla fuga quibusdam minima nostrum doloribus viverra et, quam congue cupidatat accumsan vivamus dis officia doloribus quos convallis voluptatem, assumenda? Saepe id phasellus earum, mauris fringilla omnis cupiditate debitis lorem.
+    p.home--testimonial--author.text-right Joe Blogs
+  .home--testimonial--quote-2-container.pull-left
+    = image_tag "quote-2.png"
+
+.bg-white
+  .container
+    .row
+      .col-sm-4.mb-4.text-center
+        h3 Contact Us
+        hr.hr-primary
+        p 0779164156
+        p = mail_to "info@s1chiropractic.com"
+      .col-sm-4.mb-4.text-center
+        h3 Opening Hours
+        hr.hr-primary
+        p
+          | Monday: 9 - 5
+          br
+          | Tuesday: 9 -5
+          br
+          | Wednesday: Closed
+          br
+          | Thursday: 9 - 5
+          br
+          | Friday: Closed
+      .col-sm-4.mb-4.text-center
+        h3 How to find us
+        hr.hr-primary
+        p
+          | S1 Chiropractic
+          br
+          | 6 Bell Square
+          br
+          | Off Trippet Lane
+          br
+          | Sheffield
+          br
+          | South Yorkshire
+          br
+          | S1 2FY
