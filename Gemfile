@@ -29,7 +29,7 @@ gem "sdoc", "~> 0.4.0", group: :doc
 # gem 'unicorn'
 
 gem "slim-rails"
-gem "smug", path: "../Gems/smug"
+gem "smug"
 gem "friendly_id"
 gem "jsonb_accessor"
 

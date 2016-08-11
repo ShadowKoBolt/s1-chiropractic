@@ -1,0 +1,6 @@
+.well.nested-fields
+  - if f.object.image
+    = image_tag attachment_url(f.object, :image, :fill, 100, 100, format: "png")
+  .form-group
+    = f.attachment_field :image, class: "form-control"
+  = link_to_remove_association "Remove", f, class: "btn btn-danger"
