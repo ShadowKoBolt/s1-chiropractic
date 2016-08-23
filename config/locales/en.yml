@@ -26,3 +26,6 @@ en:
       homepage_hero_image:
         one: "Hero image"
         other:  "Hero images"
+      testimonial:
+        one: "Testimonial"
+        other:  "Testimonials"

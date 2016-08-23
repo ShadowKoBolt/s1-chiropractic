@@ -1,8 +1,12 @@
-.hero
-  .hero-body.pv-2
-    .container.text-center
-      h1 Lorem
-      p Ipsum
+.looper-hero.looper.xfade data-looper="go" data-interval="5000" data-pause="false"
+  .looper-inner
+    - @page.homepage_hero_images.each do |hero_image|
+      .item
+        .hero style="background-image: url('#{attachment_url(hero_image, :image)}')"
+          .hero-body.pv-2
+            .container.text-center
+              h1 = @page.hero_title
+              p = @page.hero_subtitle
 
 .bg-white.pv-2
   .container.text-center
@@ -54,15 +58,7 @@
         p Lorem ipsum dolor sit amet, in elitr singulis vel, ea diceret pericula pri, ex quod dicit posidonium mei. Omnesque consulatu eam te, tota electram te nam.
         = link_to "Read More", "#TODO", class: "home--blog--more-link"
 
-.container.pt-2.home-testimonial.text-center
-  .home--testimonial--quote-1-container.pull-left
-    = image_tag "quote-1.png"
-  div.pull-left.home--testimonial--center.mb-4
-    p.home--testimonial--body
-      | Fringilla fuga quibusdam minima nostrum doloribus viverra et, quam congue cupidatat accumsan vivamus dis officia doloribus quos convallis voluptatem, assumenda? Saepe id phasellus earum, mauris fringilla omnis cupiditate debitis lorem.
-    p.home--testimonial--author.text-right Joe Blogs
-  .home--testimonial--quote-2-container.pull-left
-    = image_tag "quote-2.png"
+= render "testimonials"
 
 .bg-white
   .container

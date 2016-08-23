@@ -1,0 +1,21 @@
+.container.pt-2
+  #testimonials-looper.looper.slide data-looper="go" data-interval="10000" data-pause="false"
+    .looper-inner
+      - testimonials.each do |testimonial|
+        .home-testimonial.text-center.item
+          .home--testimonial--quote-1-container.pull-left
+            = image_tag "quote-1.png"
+          div.pull-left.home--testimonial--center.mb-4
+            p.home--testimonial--body = testimonial.body
+            p.home--testimonial--author.text-right = testimonial.author
+          .home--testimonial--quote-2-container.pull-left
+            = image_tag "quote-2.png"
+    nav
+      a.looper-control data-looper="prev" href="#testimonials-looper"
+        i.glyphicon.glyphicon-chevron-left
+      a.looper-control.right data-looper="next" href="#testimonials-looper"
+        i.glyphicon.glyphicon-chevron-right
+      ul.looper-nav
+        - testimonials.each_with_index do |_testimonial, index|
+          li
+            a href="#testimonials-looper" data-looper="to" data-args="#{index}" &bull;
