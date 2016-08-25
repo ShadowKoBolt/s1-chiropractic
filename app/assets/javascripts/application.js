@@ -4,3 +4,4 @@
 //= require turbolinks
 //= require bootstrap.offcanvas.min
 //= require looper.min
+//= require home
