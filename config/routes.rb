@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
   mount Smug::Engine => "/"
 
-  get ":id" => "pages#show"
+  get "testimonials" => "testimonials#index"
 
+  get ":id" => "pages#show"
   root "pages#show", id: "homepage"
 
   # The priority is based upon order of creation: first created -> highest priority.

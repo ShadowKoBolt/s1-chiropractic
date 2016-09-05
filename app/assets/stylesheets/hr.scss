@@ -6,3 +6,8 @@ hr.hr-primary-wide {
   @extend .hr-primary;
   width: 300px;
 }
+
+hr.blue-small {
+  border-top: 2px solid $brand-primary;
+  width: 25%;
+}

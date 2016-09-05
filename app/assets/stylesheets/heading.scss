@@ -5,3 +5,11 @@ h1 {
 h1, h2, h3, h4, h5 {
   padding-bottom: 0;
 }
+
+.page {
+  h1 {
+    font-size: 3em;
+    font-weight: 100;
+    @extend .mb-4;
+  }
+}
