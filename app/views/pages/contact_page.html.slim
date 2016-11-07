@@ -1,0 +1,23 @@
+.contact-page
+  .bg-white
+    .container
+
+      h1.text-center.mb-4 = @page.name
+
+      .body.mb-4
+        == @page.body
+
+  .container.mt-4.mb-4
+    = simple_form_for(contact, url: contact_path, method: :post) do |f|
+      = render "layouts/errors", errors: f.object.errors.full_messages
+      .row
+        .col-sm-6
+          = f.input :email
+        .col-sm-6
+          = f.input :telephone
+      .row
+        .col-sm-12
+          = f.input :message, input_html: { rows: 6 }
+      .row
+        .col-sm-12.text-right
+          = f.submit class: "btn btn-primary"

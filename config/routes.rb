@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   get ":id" => "pages#show"
   root "pages#show", id: "homepage"
 
+  post "contact" => "contacts#create"
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

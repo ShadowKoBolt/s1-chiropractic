@@ -29,3 +29,21 @@ en:
       testimonial:
         one: "Testimonial"
         other:  "Testimonials"
+      contact_page:
+        one: "Contact page"
+        other: "Contact pages"
+      contact:
+        one: "Contact"
+        other: "Contacts"
+    attributes:
+      contact:
+        email: "Your email"
+        telephone: "Your telephone number"
+  helpers:
+    submit:
+      contact:
+        create: "Submit"
+  include_email_or_telephone: "Please include either an email or telephone number incase we need to get back to you."
+  contacts:
+    create:
+      success: "Message sent.  We will get back to you as soon as we can."

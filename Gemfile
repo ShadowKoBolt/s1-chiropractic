@@ -50,6 +50,7 @@ end
 group :development do
   gem "pre-commit"
   gem "rubocop"
+  gem "i18n-debug"
 end
 
 group :production do
