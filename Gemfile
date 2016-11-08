@@ -32,6 +32,7 @@ gem "slim-rails"
 gem "smug"
 gem "friendly_id"
 gem "jsonb_accessor"
+gem "refile-s3"
 
 group :development, :test do
   gem "pry-nav"
